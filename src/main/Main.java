@@ -29,6 +29,7 @@ public class Main {
 					mainMenu();
 				} else {
 					System.out.println("Failed login...");
+					System.out.println("Please Try Again!");
 					System.out.println("\nPress enter to continue...");
 					
 					sc.nextLine();
