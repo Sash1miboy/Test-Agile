@@ -25,14 +25,14 @@ public class Main {
 			switch (sc.nextLine()) {
 			case "1":
 				if (loginMenu()) {
-					System.out.println("User login succesfully\n");
-					System.out.println("Welcome user, this is our application\n");
-					System.out.println("This our main menu\n");
+					System.out.println("User logged in!\n");
+					System.out.println("Hello User, Welcome to our application\n");
 					mainMenu();
 				} else {
-					System.out.println("Something Unexpected just happen!");
-					System.out.println("Please Try Again later!");
-					System.out.println("\nPress enter to continue...");
+					System.out.println("ERROR: Failed to login");
+					System.out.println("Please Try Again!");
+					System.out.println("");
+					System.out.println("Press enter to continue...");
 					
 					sc.nextLine();
 				}
