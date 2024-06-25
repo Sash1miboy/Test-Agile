@@ -18,18 +18,20 @@ public class Main {
 		do {
 			System.out.println("Welcome:");
 			System.out.println("1. Login");
-			System.out.println("2. Register"	);
+			System.out.println("2. Register");
 			
 			System.out.print("\nSelect: ");
 			
 			switch (sc.nextLine()) {
 			case "1":
 				if (loginMenu()) {
-					System.out.println("User logged in!\n");
+					System.out.println("User login succesfully\n");
+					System.out.println("Welcome user, this is our application\n");
+					System.out.println("This our main menu\n");
 					mainMenu();
 				} else {
-					System.out.println("Failed login...");
-					System.out.println("Please Try Again!");
+					System.out.println("Something Unexpected just happen!");
+					System.out.println("Please Try Again later!");
 					System.out.println("\nPress enter to continue...");
 					
 					sc.nextLine();
@@ -39,8 +41,9 @@ public class Main {
 			case "2":
 				if (registerMenu()) {
 					System.out.println("User has been succesfully registered!\n");
+					System.out.println("Redirecting you to the login page...\n");
 				} else {
-					System.out.println("Failed register...");
+					System.out.println("Something went wrong!");
 					System.out.println("Please try again later!");
 					System.out.println("\nPress enter to continue...");
 					
