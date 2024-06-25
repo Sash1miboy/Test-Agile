@@ -38,9 +38,10 @@ public class Main {
 				
 			case "2":
 				if (registerMenu()) {
-					System.out.println("User registered!\n");
+					System.out.println("User has been succesfully registered!\n");
 				} else {
 					System.out.println("Failed register...");
+					System.out.println("Please try again later!");
 					System.out.println("\nPress enter to continue...");
 					
 					sc.nextLine();
