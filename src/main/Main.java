@@ -18,7 +18,7 @@ public class Main {
 		do {
 			System.out.println("Welcome:");
 			System.out.println("1. Login");
-			System.out.println("2. Register"	);
+			System.out.println("2. Register");
 			
 			System.out.print("\nSelect: ");
 			
@@ -41,9 +41,9 @@ public class Main {
 			case "2":
 				if (registerMenu()) {
 					System.out.println("User has been succesfully registered!\n");
-					System.out.println("You can now login to our application\n");
+					System.out.println("Redirecting you to the login page...\n");
 				} else {
-					System.out.println("Failed register...");
+					System.out.println("Something went wrong!");
 					System.out.println("Please try again later!");
 					System.out.println("\nPress enter to continue...");
 					
